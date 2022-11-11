@@ -10,11 +10,6 @@ public class TowerBuilder : MonoBehaviour
 
     private List<Block> _blocks;
 
-    private void Start()
-    {
-        Build();  
-    }
-
     public List<Block> Build()
     {
         _blocks = new List<Block>();
@@ -38,6 +33,6 @@ public class TowerBuilder : MonoBehaviour
 
     private Vector3 GetBuildPoint(Transform currentSegment)
     {
-        return new Vector3(_buildPoint.position.x, currentSegment.position.y + currentSegment.localScale.y / 2 + _block.transform.localScale.y / 2 - 0.2f, _buildPoint.position.z);
+        return new Vector3(_buildPoint.position.x, currentSegment.position.y + currentSegment.localScale.y / 2 + _block.transform.localScale.y / 2f, _buildPoint.position.z);
     }
 }
