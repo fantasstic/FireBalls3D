@@ -129,3 +129,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 20
   _moveDirection: {x: 0, y: 0, z: 0}
+  _bounceForce: 100
+  _bounceRadius: 100
